@@ -5,7 +5,16 @@
   - name: Copy ssh key
     copy:
         src: /home/pablo/Automation/KEYS/AutomatizacionDevops.pem
-        dest: $HOME/
+        dest: $HOME
         owner: ubuntu
         mode: '0400'
+  
+  - name: Review if ssh directory exist
+    shell:
+      cmd: mkdir -p ~/.ssh
+
+  - name: Copy ssh config file
+    copy:
+      src: /home/pablo/DevOps/CopaCom/AnsibleMaster/config
+      dest: ~/.ssh/config
  
