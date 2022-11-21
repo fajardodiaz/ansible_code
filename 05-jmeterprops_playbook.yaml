@@ -1,4 +1,4 @@
-- name: Playbook to install set jmeter props
+- name: Playbook to set jmeter properties
   hosts: servers
   remote_user: ubuntu
   tasks:

@@ -23,4 +23,4 @@
     - name: Replace PluginsManagerCMD.sh file
       copy:
         src: /home/pablo/Projects/AnsibleTerraform/Ansible/CopaCom/PluginsManagerCMD.sh
-        dest: /opt/apache-jmeter5.5/bin/
+        dest: /opt/apache-jmeter-5.5/bin/
