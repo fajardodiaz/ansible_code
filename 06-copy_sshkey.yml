@@ -1,0 +1,11 @@
+- name: Playbook to copy ssh file
+  hosts: servers
+  remote_user: ubuntu
+  tasks:
+  - name: Copy ssh key
+    copy:
+        src: /home/pablo/Automation/KEYS/AutomatizacionDevops.pem
+        dest: $HOME/
+        owner: ubuntu
+        mode: '0400'
+ 
