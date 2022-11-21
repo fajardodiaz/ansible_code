@@ -1,0 +1,8 @@
+- name: Playbook to copy jmx
+  hosts: servers
+  remote_user: ubuntu
+  tasks:
+  - name: Copy jmx test plan
+    copy:
+        src: /home/pablo/DevOps/CopaCom/AnsibleMaster/script
+        dest: $HOME
