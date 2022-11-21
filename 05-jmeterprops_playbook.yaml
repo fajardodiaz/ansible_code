@@ -16,10 +16,3 @@
     - name: Execute script to set jmeter hosts
       shell:
         cmd: cd $HOME && bash edit-jmeter-props.sh
-
-    - name: Copy .bzt-rc file
-      copy:
-        src: /home/pablo/DevOps/CopaCom/AnsibleMaster/.bzt-rc
-        dest: $HOME
-        owner: ubuntu
-        mode: '0744'

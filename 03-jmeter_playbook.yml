@@ -9,10 +9,10 @@
     - name: Download jmeter
       get_url:
         url: https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-5.5.zip
-        dest: /home/ubuntu/jmeter-5.5.zip
+        dest: /home/ubuntu/apache-jmeter-5.5.zip
 
     - name: Unzip jmeter
       unarchive:
-        src: /home/ubuntu/jmeter-5.5.zip
+        src: /home/ubuntu/apache-jmeter-5.5.zip
         dest: /opt/
         remote_src: yes

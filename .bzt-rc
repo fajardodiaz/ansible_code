@@ -55,7 +55,7 @@ modules:
     system-properties:  # Java system properties
       sun.net.http.allowRestrictedHeaders: "true"
     memory-xmx: 4G  # allow JMeter to use up to 4G of memory
-    path: /opt/apache-jmeter5.5/bin/jmeter.sh  # path to local jmeter installation
+    path: /opt/apache-jmeter-5.5/bin/jmeter.sh  # path to local jmeter installation
     version: 5.5  # version to use
     plugins:  # plugins to install
     - jpgc-json=2.2
