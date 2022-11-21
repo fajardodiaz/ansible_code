@@ -1,0 +1,25 @@
+- name: Playbook to install set jmeter props
+  hosts: servers
+  remote_user: ubuntu
+  tasks:
+    - name: Update ubuntu  
+      apt:
+        update_cache: yes
+
+    - name: Copy bash file to set jmeter props
+      copy:
+        src: /home/pablo/DevOps/CopaCom/AnsibleMaster/edit-jmeter-props.sh
+        dest: $HOME/
+        owner: ubuntu
+        mode: '0744'
+    
+    - name: Execute script to set jmeter hosts
+      shell:
+        cmd: cd $HOME && bash edit-jmeter-props.sh
+
+    - name: Copy .bzt-rc file
+      copy:
+        src: /home/pablo/DevOps/CopaCom/AnsibleMaster/.bzt-rc
+        dest: $HOME
+        owner: ubuntu
+        mode: '0744'
