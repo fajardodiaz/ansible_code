@@ -1,0 +1,17 @@
+- name: Playbook to install ansible and send the slave folder
+  hosts: servers
+  remote_user: ubuntu
+  tasks:
+  - name: install ansible
+    apt:
+        update_cache: yes
+        name: ansible
+        state: latest
+
+  - name: clone slave playbooks
+    git:
+       repo: https://github.com/fajardodiaz/ansible_slaves.git
+       dest: $HOME
+       clone: yes
+       update: yes
+    
