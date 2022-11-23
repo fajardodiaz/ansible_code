@@ -4,5 +4,5 @@
   tasks:
   - name: Copy jmx test plan
     copy:
-        src: /home/pablo/DevOps/CopaCom/AnsibleMaster/script
-        dest: $HOME
+        src: /home/pablo/DevOps/CopaCom/script
+        dest: /home/ubuntu/script

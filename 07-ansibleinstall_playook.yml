@@ -8,10 +8,13 @@
         name: ansible
         state: latest
 
+  - name: create git repo folder
+    shell:
+      cmd: mkdir -p /home/ubuntu/ansible
+
   - name: clone slave playbooks
     git:
        repo: https://github.com/fajardodiaz/ansible_slaves.git
-       dest: $HOME
+       dest: /home/ubuntu/ansible
        clone: yes
        update: yes
-    

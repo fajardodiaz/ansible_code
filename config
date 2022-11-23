@@ -1,9 +1,9 @@
 Host ubuntu-slave-1
-    HostName server1.cyberciti.biz
+    HostName 11.0.1.84
     User ubuntu
     IdentityFile /home/ubuntu/AutomatizacionDevops.pem
 
 Host ubuntu-slave-2
-    HostName server1.cyberciti.biz
+    HostName 11.0.1.53
     User ubuntu
     IdentityFile /home/ubuntu/AutomatizacionDevops.pem

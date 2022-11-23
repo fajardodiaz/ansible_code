@@ -1,0 +1,47 @@
+2022-11-23 02:03:57,102 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2022-11-23 02:03:57,171 INFO o.a.j.JMeter: Loading user properties from: /opt/apache-jmeter-5.5/bin/user.properties
+2022-11-23 02:03:57,172 INFO o.a.j.JMeter: Loading system properties from: /opt/apache-jmeter-5.5/bin/system.properties
+2022-11-23 02:03:57,173 INFO o.a.j.JMeter: Setting System property: server_port=1099
+2022-11-23 02:03:57,182 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2022-11-23 02:03:57,182 INFO o.a.j.JMeter: Version 5.5
+2022-11-23 02:03:57,183 INFO o.a.j.JMeter: java.version=11.0.17
+2022-11-23 02:03:57,183 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2022-11-23 02:03:57,183 INFO o.a.j.JMeter: os.name=Linux
+2022-11-23 02:03:57,183 INFO o.a.j.JMeter: os.arch=amd64
+2022-11-23 02:03:57,183 INFO o.a.j.JMeter: os.version=6.0.0-kali3-amd64
+2022-11-23 02:03:57,183 INFO o.a.j.JMeter: file.encoding=UTF-8
+2022-11-23 02:03:57,183 INFO o.a.j.JMeter: java.awt.headless=true
+2022-11-23 02:03:57,184 INFO o.a.j.JMeter: Max memory     =1073741824
+2022-11-23 02:03:57,184 INFO o.a.j.JMeter: Available Processors =8
+2022-11-23 02:03:57,200 INFO o.a.j.JMeter: Default Locale=English (EN)
+2022-11-23 02:03:57,201 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2022-11-23 02:03:57,201 INFO o.a.j.JMeter: JMeterHome=/opt/apache-jmeter-5.5
+2022-11-23 02:03:57,201 INFO o.a.j.JMeter: user.dir  =/home/pablo/DevOps/CopaCom/AnsibleMaster
+2022-11-23 02:03:57,202 INFO o.a.j.JMeter: PWD       =/home/pablo/DevOps/CopaCom/AnsibleMaster
+2022-11-23 02:03:57,202 INFO o.a.j.JMeter: IP: 127.0.1.1 Name: infos-365 FullName: infos-365
+2022-11-23 02:03:57,258 INFO o.a.j.r.RmiUtils: System property 'java.rmi.server.hostname' is not defined, using localHost address
+2022-11-23 02:03:57,258 INFO o.a.j.r.RmiUtils: Local IP address=127.0.1.1
+2022-11-23 02:03:57,259 ERROR o.a.j.JMeter: Giving up, as server failed with:
+java.rmi.RemoteException: Cannot start. infos-365 is a loopback address.
+	at org.apache.jmeter.rmi.RmiUtils.getRmiHost(RmiUtils.java:145) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.rmi.RmiUtils.createServerSocketFactory(RmiUtils.java:112) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.<init>(RemoteJMeterEngineImpl.java:68) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.startServer(RemoteJMeterEngineImpl.java:74) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.JMeter.start(JMeter.java:441) ~[ApacheJMeter_core.jar:5.5]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) ~[ApacheJMeter.jar:5.5]
+2022-11-23 02:03:57,274 ERROR o.a.j.JMeter: An error occurred: 
+java.rmi.RemoteException: Cannot start. infos-365 is a loopback address.
+	at org.apache.jmeter.rmi.RmiUtils.getRmiHost(RmiUtils.java:145) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.rmi.RmiUtils.createServerSocketFactory(RmiUtils.java:112) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.<init>(RemoteJMeterEngineImpl.java:68) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.engine.RemoteJMeterEngineImpl.startServer(RemoteJMeterEngineImpl.java:74) ~[ApacheJMeter_core.jar:5.5]
+	at org.apache.jmeter.JMeter.start(JMeter.java:441) ~[ApacheJMeter_core.jar:5.5]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:566) ~[?:?]
+	at org.apache.jmeter.NewDriver.main(NewDriver.java:259) ~[ApacheJMeter.jar:5.5]

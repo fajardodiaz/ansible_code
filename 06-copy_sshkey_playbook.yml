@@ -5,7 +5,7 @@
   - name: Copy ssh key
     copy:
         src: /home/pablo/Automation/KEYS/AutomatizacionDevops.pem
-        dest: $HOME
+        dest: /home/ubuntu
         owner: ubuntu
         mode: '0400'
   

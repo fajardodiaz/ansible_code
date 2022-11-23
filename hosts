@@ -1,8 +1,2 @@
-[east]
+[servers]
 east-master
-
-[west]
-west-master
-
-[saopaulo]
-saopaulo-master
